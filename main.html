@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GN-Estate</title>
+    <title>GNestate</title>
     <link rel="stylesheet" href="src/styles/main.css" />
     <!-- <link
       rel="shortcut icon"
@@ -14,7 +14,7 @@
     <meta name="author" content="Gnonik1" />
     <meta property="og:url" content="https://gnonik1.github.io/GN-Estate/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="GN-Estate" />
+    <meta property="og:title" content="GNestate" />
     <meta property="og:description" content="Making estate site" />
     <!-- <meta
       property="og:image"
@@ -26,5 +26,366 @@
     />
     <meta name="robots" content="index,follow" />
   </head>
-  <body></body>
+  <body class="bg-gray-200">
+    <header>
+      <div
+        class="mt-[40px] mb-[28px] flex items-center justify-between px-[20px] md:mt-[32px] md:mb-[24px] md:px-[32px] lg:mt-[28px] lg:mb-[24px] lg:px-[48px]"
+      >
+        <a href="./main.html">
+          <img
+            src="src/assets/logos/logo.png"
+            alt="GN Estate logo"
+            class="h-[48px] w-[48px] md:h-[52px] md:w-[52px] lg:h-[56px] lg:w-[56px]"
+          />
+        </a>
+        <nav class="hidden">
+          <ul>
+            <li><a href="./main.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li>
+              <a href="#">Sell Something</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          aria-label="Search"
+          class="flex h-[48px] w-[48px] items-center justify-center rounded-[24px] bg-[#F8F8F8]"
+        >
+          <img
+            src="src/assets/icons/search.png"
+            alt="Search icon"
+            class="h-[18px] w-[18px]"
+          />
+        </button>
+      </div>
+    </header>
+    <main class="container">
+      <section>
+        <aside>
+          <form>
+            <div>
+              <h2>Location</h2>
+              <select name="location">
+                <option value="all" selected>All Kenya</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="mombasa">Mombasa</option>
+                <option value="kisumu">Kisumu</option>
+              </select>
+            </div>
+            <div>
+              <h2>Property</h2>
+              <label>
+                <input type="checkbox" name="property" value="houses-rent" />
+                Houses & Apartments for Rent <span>| 9548</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="houses-sale"
+                  checked
+                />
+                Houses & Apartments for Sale <span>| 9548</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="land-rent"
+                  checked
+                />
+                Land & Plots for Rent <span>| 9548</span>
+              </label>
+              <label>
+                <input type="checkbox" name="property" value="land-sale" />
+                Land & Plots for Sale <span>| 9548</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="commercial-rent"
+                />
+                Commercial Property for Rent <span>| 9548</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="commercial-sale"
+                />
+                Commercial Property for Sale <span>| 9548</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="event-centres"
+                  checked
+                />
+                Event Centres, Venues & Worksta <span>| 9548</span>
+              </label>
+              <label>
+                <input type="checkbox" name="property" value="short-let" />
+                Short Let Property <span>| 9548</span>
+              </label>
+              <label>
+                <input type="checkbox" name="property" value="land-sale-2" />
+                Land & Plots for Sale <span>| 9548</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="commercial-rent-2"
+                />
+                Commercial Property for Rent <span>| 9548</span>
+              </label>
+            </div>
+            <div>
+              <h2>Price</h2>
+              <label>
+                <input type="checkbox" name="price" value="under-13k" />
+                Under 13 K <span>• 2183 ads</span>
+              </label>
+              <label>
+                <input type="checkbox" name="price" value="13k-160k" checked />
+                13 - 160 K <span>• 2183 ads</span>
+              </label>
+              <label>
+                <input type="checkbox" name="price" value="160k-6m" checked />
+                160 K - 6 M <span>• 2183 ads</span>
+              </label>
+              <label>
+                <input type="checkbox" name="price" value="6m-55m" />
+                6 - 55 M <span>• 2183 ads</span>
+              </label>
+              <label>
+                <input type="checkbox" name="price" value="6m-55m-2" />
+                6 - 55 M <span>• 2183 ads</span>
+              </label>
+            </div>
+          </form>
+        </aside>
+        <div class="relative">
+          <img src="src/assets/images/main-photo.jpg" alt="City view" />
+          <div class="absolute">
+            <h1>Find the house you want easily</h1>
+            <p>Buy, sell, rent or lease on just one platform</p>
+            <form>
+              <div class="relative">
+                <input type="text" placeholder="Search..." />
+                <img
+                  src="src/assets/icons/search.png"
+                  alt="Search icon"
+                  class="absolute"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2: Trending Ads -->
+      <section>
+        <h2>Trending Ads</h2>
+        <div>
+          <a href="./home.html">
+            <article>
+              <div class="relative">
+                <img
+                  src="src/assets/images/house1.jpg"
+                  alt="House in Namanga"
+                />
+                <span>VIP TOP+</span>
+              </div>
+              <div>
+                <h3>200 Acres Parcel for Sale in Namanga</h3>
+                <p>Kajiado, Namanga</p>
+                <p>1450$ <span>/Month</span></p>
+                <div>
+                  <span>5 Bedroom</span>
+                  <span>3 Bathroom</span>
+                  <span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="./home.html">
+            <article>
+              <div class="relative">
+                <img
+                  src="src/assets/images/house2.jpg"
+                  alt="House in Nairobi"
+                />
+                <span>VIP TOP+</span>
+              </div>
+              <div>
+                <h3>200 Acres Parcel for Sale in Namanga</h3>
+                <p>Kajiado, Namanga</p>
+                <p>1450$ <span>/Month</span></p>
+                <div>
+                  <span>5 Bedroom</span>
+                  <span>3 Bathroom</span>
+                  <span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="./home.html">
+            <article>
+              <div class="relative">
+                <img
+                  src="src/assets/images/house3.jpg"
+                  alt="Apartment in Mombasa"
+                />
+                <span>VIP TOP+</span>
+              </div>
+              <div>
+                <h3>200 Acres Parcel for Sale in Namanga</h3>
+                <p>Kajiado, Namanga</p>
+                <p>1450$ <span>/Month</span></p>
+                <div>
+                  <span>5 Bedroom</span>
+                  <span>3 Bathroom</span>
+                  <span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="./home.html">
+            <article>
+              <div class="relative">
+                <img src="src/assets/images/house1.jpg" alt="House in Kisumu" />
+                <span>VIP TOP+</span>
+              </div>
+              <div>
+                <h3>200 Acres Parcel for Sale in Namanga</h3>
+                <p>Kajiado, Namanga</p>
+                <p>1450$ <span>/Month</span></p>
+                <div>
+                  <span>5 Bedroom</span>
+                  <span>3 Bathroom</span>
+                  <span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="./home.html">
+            <article>
+              <div class="relative">
+                <img src="src/assets/images/house3.jpg" alt="Villa in Nakuru" />
+                <span>VIP TOP+</span>
+              </div>
+              <div>
+                <h3>200 Acres Parcel for Sale in Namanga</h3>
+                <p>Kajiado, Namanga</p>
+                <p>1450$ <span>/Month</span></p>
+                <div>
+                  <span>5 Bedroom</span>
+                  <span>3 Bathroom</span>
+                  <span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="./home.html">
+            <article>
+              <div class="relative">
+                <img
+                  src="src/assets/images/house2.jpg"
+                  alt="House in Eldoret"
+                />
+                <span>VIP TOP+</span>
+              </div>
+              <div>
+                <h3>200 Acres Parcel for Sale in Namanga</h3>
+                <p>Kajiado, Namanga</p>
+                <p>1450$ <span>/Month</span></p>
+                <div>
+                  <span>5 Bedroom</span>
+                  <span>3 Bathroom</span>
+                  <span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="./home.html">
+            <article>
+              <div class="relative">
+                <img
+                  src="src/assets/images/house3.jpg"
+                  alt="Property in Thika"
+                />
+                <span>VIP TOP+</span>
+              </div>
+              <div>
+                <h3>200 Acres Parcel for Sale in Namanga</h3>
+                <p>Kajiado, Namanga</p>
+                <p>1450$ <span>/Month</span></p>
+                <div>
+                  <span>5 Bedroom</span>
+                  <span>3 Bathroom</span>
+                  <span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="./home.html">
+            <article>
+              <div class="relative">
+                <img
+                  src="src/assets/images/house1.jpg"
+                  alt="House in Malindi"
+                />
+                <span>VIP TOP+</span>
+              </div>
+              <div>
+                <h3>200 Acres Parcel for Sale in Namanga</h3>
+                <p>Kajiado, Namanga</p>
+                <p>1450$ <span>/Month</span></p>
+                <div>
+                  <span>5 Bedroom</span>
+                  <span>3 Bathroom</span>
+                  <span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <!-- Top Row -->
+        <div>
+          <div>
+            <a href="./main.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Contact us</a>
+            <a href="#">Sign in</a>
+          </div>
+          <div>
+            <p>Support@Roberts.com</p>
+          </div>
+          <div>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+
+        <!-- Divider (უბრალო div) -->
+        <div class="border-t"></div>
+
+        <!-- Bottom -->
+        <div>
+          <p>© 2022 Robert.co.ke Gibraltar</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
