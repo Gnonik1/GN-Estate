@@ -26,10 +26,10 @@
     />
     <meta name="robots" content="index,follow" />
   </head>
-  <body class="bg-gray-200">
+  <body class="bg-gray-200 font-['Poppins']">
     <header>
       <div
-        class="mt-[40px] mb-[28px] flex items-center justify-between px-[20px] md:mt-[32px] md:mb-[24px] md:px-[32px] lg:mt-[28px] lg:mb-[24px] lg:px-[48px]"
+        class="mt-[40px] mb-[28px] flex w-[335px] items-center justify-between mx-auto md:mt-[32px] md:mb-[24px] lg:mt-[28px] lg:mb-[24px]"
       >
         <a href="./index.html">
           <img
@@ -62,129 +62,311 @@
         </button>
       </div>
     </header>
-    <main class="container">
-      <section>
-        <aside>
+    <main>
+      <section
+        class="flex flex-col items-center gap-[20px] px-[20px] md:gap-[24px] md:px-[32px] lg:gap-[28px] lg:px-[48px]"
+      >
+        <aside
+          class="order-2 w-[375px] rounded-[24px] bg-[#F8F8F8] md:w-full md:max-w-[560px] lg:max-w-[680px]"
+        >
           <form>
-            <div>
-              <h2>Location</h2>
-              <select name="location">
+            <div
+              class="px-[20px] pt-[24px] md:px-[32px] md:pt-[28px] lg:px-[40px] lg:pt-[32px]"
+            >
+              <h2
+                class="mb-[16px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px]"
+              >
+                Location
+              </h2>
+
+              <select
+                name="location"
+                class="mb-[32px] h-[41px] w-full rounded-[10px] border border-black/10 bg-[#F8F8F8] pl-[18px] pr-[8px] text-[14px] font-normal leading-[100%] tracking-[0%] text-black outline-none md:h-[44px] lg:h-[46px]"
+              >
                 <option value="all" selected>All Kenya</option>
                 <option value="nairobi">Nairobi</option>
                 <option value="mombasa">Mombasa</option>
                 <option value="kisumu">Kisumu</option>
               </select>
             </div>
-            <div>
-              <h2>Property</h2>
-              <label>
-                <input type="checkbox" name="property" value="houses-rent" />
-                Houses & Apartments for Rent <span>| 9548</span>
+
+            <div class="px-[20px] md:px-[32px] lg:px-[40px]">
+              <h2
+                class="mb-[13px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px]"
+              >
+                Property
+              </h2>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="houses-rent"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  Houses & Apartments for Rent
+                  <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
                 <input
                   type="checkbox"
                   name="property"
                   value="houses-sale"
                   checked
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                Houses & Apartments for Sale <span>| 9548</span>
+                <span class="ml-[12px]">
+                  Houses & Apartments for Sale
+                  <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
                 <input
                   type="checkbox"
                   name="property"
                   value="land-rent"
                   checked
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                Land & Plots for Rent <span>| 9548</span>
+                <span class="ml-[12px]">
+                  Land & Plots for Rent <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
-                <input type="checkbox" name="property" value="land-sale" />
-                Land & Plots for Sale <span>| 9548</span>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="land-sale"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  Land & Plots for Sale <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
                 <input
                   type="checkbox"
                   name="property"
                   value="commercial-rent"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                Commercial Property for Rent <span>| 9548</span>
+                <span class="ml-[12px]">
+                  Commercial Property for Rent
+                  <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
                 <input
                   type="checkbox"
                   name="property"
                   value="commercial-sale"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                Commercial Property for Sale <span>| 9548</span>
+                <span class="ml-[12px]">
+                  Commercial Property for Sale
+                  <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
                 <input
                   type="checkbox"
                   name="property"
                   value="event-centres"
                   checked
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                Event Centres, Venues & Worksta <span>| 9548</span>
+                <span class="ml-[12px]">
+                  Event Centres, Venues & Worksta
+                  <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
-                <input type="checkbox" name="property" value="short-let" />
-                Short Let Property <span>| 9548</span>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="short-let"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  Short Let Property <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
-                <input type="checkbox" name="property" value="land-sale-2" />
-                Land & Plots for Sale <span>| 9548</span>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="property"
+                  value="land-sale-2"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  Land & Plots for Sale <span class="opacity-80">| 9548</span>
+                </span>
               </label>
-              <label>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
                 <input
                   type="checkbox"
                   name="property"
                   value="commercial-rent-2"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                Commercial Property for Rent <span>| 9548</span>
+                <span class="ml-[12px]">
+                  Commercial Property for Rent
+                  <span class="opacity-80">| 9548</span>
+                </span>
               </label>
             </div>
-            <div>
-              <h2>Price</h2>
-              <label>
-                <input type="checkbox" name="price" value="under-13k" />
-                Under 13 K <span>• 2183 ads</span>
+
+            <div class="h-[41px] md:h-[52px] lg:h-[60px]"></div>
+
+            <div class="px-[20px] md:px-[32px] lg:px-[40px]">
+              <h2
+                class="mb-[13px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px]"
+              >
+                Price Range
+              </h2>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="price"
+                  value="under-13k"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  Under 13 K <span class="opacity-80">• 2183 ads</span>
+                </span>
               </label>
-              <label>
-                <input type="checkbox" name="price" value="13k-160k" checked />
-                13 - 160 K <span>• 2183 ads</span>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="price"
+                  value="13k-160k"
+                  checked
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  13 - 160 K <span class="opacity-80">• 2183 ads</span>
+                </span>
               </label>
-              <label>
-                <input type="checkbox" name="price" value="160k-6m" checked />
-                160 K - 6 M <span>• 2183 ads</span>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="price"
+                  value="160k-6m"
+                  checked
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  160 K - 6 M <span class="opacity-80">• 2183 ads</span>
+                </span>
               </label>
-              <label>
-                <input type="checkbox" name="price" value="6m-55m" />
-                6 - 55 M <span>• 2183 ads</span>
+
+              <label
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="price"
+                  value="6m-55m"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  6 - 55 M <span class="opacity-80">• 2183 ads</span>
+                </span>
               </label>
-              <label>
-                <input type="checkbox" name="price" value="6m-55m-2" />
-                6 - 55 M <span>• 2183 ads</span>
+
+              <label
+                class="mb-[32px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[36px] md:text-[15px] md:leading-[120%]"
+              >
+                <input
+                  type="checkbox"
+                  name="price"
+                  value="6m-55m-2"
+                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                />
+                <span class="ml-[12px]">
+                  6 - 55 M <span class="opacity-80">• 2183 ads</span>
+                </span>
               </label>
             </div>
           </form>
         </aside>
-        <div class="relative">
-          <img src="src/assets/images/main-photo.jpg" alt="City view" />
-          <div class="absolute">
-            <h1>Find the house you want easily</h1>
-            <p>Buy, sell, rent or lease on just one platform</p>
-            <form>
-              <div class="relative">
-                <input type="text" placeholder="Search..." />
-                <img
-                  src="src/assets/icons/search.png"
-                  alt="Search icon"
-                  class="absolute"
-                />
-              </div>
-            </form>
+        <div class="order-1">
+          <div
+            class="relative w-[335px] mx-auto md:w-full md:max-w-[704px] lg:max-w-[928px]"
+          >
+            <img
+              src="src/assets/images/main-photo.jpg"
+              alt="City view"
+              class="h-[435px] w-[335px] rounded-[24px] bg-[#D9D9D9] object-cover md:w-full"
+            />
+            <div class="absolute inset-0 z-10">
+              <h1
+                class="mt-[32px] mb-[8px] mx-[47px] text-center text-[24px] font-semibold leading-[100%] text-black/80 md:mt-[40px] md:mx-auto md:max-w-[420px] md:text-[32px] md:leading-[110%] lg:mt-[48px] lg:max-w-[520px] lg:text-[40px]"
+              >
+                Find the house you want easily
+              </h1>
+              <p
+                class="mx-auto w-[300px] text-center text-[14px] font-normal leading-[100%] text-black opacity-70 md:w-auto md:max-w-[420px] md:text-[16px] md:leading-[120%] lg:max-w-[520px] lg:text-[18px]"
+              >
+                Buy, sell, rent or lease on just one platform
+              </p>
+              <form
+                class="hidden md:block absolute inset-x-[32px] bottom-[24px] lg:inset-x-[48px] lg:bottom-[32px]"
+              >
+                <div class="relative mx-auto max-w-[620px]">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    class="h-[56px] w-full rounded-[28px] bg-white pl-[20px] pr-[56px] text-[14px] font-normal text-black/80 shadow-[0_12px_30px_rgba(0,0,0,0.08)] outline-none lg:h-[64px] lg:rounded-[32px] lg:pl-[24px] lg:pr-[64px] lg:text-[16px]"
+                  />
+                  <img
+                    src="src/assets/icons/search.png"
+                    alt="Search icon"
+                    class="absolute right-[20px] top-1/2 h-[18px] w-[18px] -translate-y-1/2 lg:right-[24px] lg:h-[20px] lg:w-[20px]"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
