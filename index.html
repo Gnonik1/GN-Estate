@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GNestate</title>
     <link rel="stylesheet" href="src/styles/main.css" />
-    <!-- <link
+    <link
       rel="shortcut icon"
-      href="src/assets/logos/smile.png"
+      href="src/assets/logos/logo.png"
       type="image/png"
-    /> -->
-    <meta name="description" content="Making estate site" />
+    />
+    <meta
+      name="description"
+      content="estate listings/search/value proposition"
+    />
     <meta name="author" content="Gnonik1" />
     <meta property="og:url" content="https://gnonik1.github.io/GN-Estate/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="GNestate" />
     <meta property="og:description" content="Making estate site" />
-    <!-- <meta
+    <meta
       property="og:image"
-      content="https://github.com/Gnonik1/Tailwind-Check/blob/main/src/assets/logos/smile.png?raw=true"
-    /> -->
+      content="https://github.com/Gnonik1/GN-Estate/blob/main/src/assets/logos/logo.png?raw=true"
+    />
     <meta
       name="google-site-verification"
       content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="
@@ -29,59 +32,70 @@
   <body class="bg-gray-200 font-['Poppins']">
     <header>
       <div
-        class="mt-[40px] mb-[28px] flex w-[335px] items-center justify-between mx-auto md:mt-[32px] md:mb-[24px] lg:mt-[28px] lg:mb-[24px]"
+        class="mt-[40px] mb-[28px] flex w-[335px] items-center justify-between mx-auto md:mt-[32px] md:mb-[24px] lg:mt-[28px] lg:mb-[24px] 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px] 2xl:mt-[42px] 2xl:mb-[42px]"
       >
         <a href="./index.html">
           <img
             src="src/assets/logos/logo.png"
             alt="GN Estate logo"
-            class="h-[48px] w-[48px] md:h-[52px] md:w-[52px] lg:h-[56px] lg:w-[56px]"
+            class="h-[48px] w-[48px] md:h-[52px] md:w-[52px] lg:h-[56px] lg:w-[56px] 2xl:h-[48px] 2xl:w-[48px]"
           />
         </a>
-        <nav class="hidden">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
+        <nav class="hidden 2xl:block">
+          <ul
+            class="flex items-center gap-[48px] text-[12px] font-normal leading-[100%] tracking-[0%] text-black 2xl:text-[14px]"
+          >
+            <li>
+              <a href="./index.html" class="relative"
+                >Home<span
+                  class="absolute left-1/2 top-[22px] h-[2px] w-[42px] -translate-x-1/2 bg-[#29B24E]"
+                ></span
+              ></a>
+            </li>
             <li><a href="#">Discover</a></li>
             <li><a href="#">Contact us</a></li>
             <li><a href="#">Sign in</a></li>
-            <li>
-              <a href="#">Sell Something</a>
-            </li>
           </ul>
         </nav>
         <button
           type="button"
-          aria-label="Search"
-          class="flex h-[48px] w-[48px] items-center justify-center rounded-[24px] bg-[#F8F8F8]"
+          aria-label="Sell something"
+          class="flex h-[48px] w-[48px] cursor-pointer items-center justify-center rounded-[24px] bg-[#F8F8F8] 2xl:h-[47px] 2xl:w-[156px] 2xl:gap-[10px] 2xl:rounded-[12px] 2xl:bg-[#29B24E]"
         >
           <img
             src="src/assets/icons/search.png"
-            alt="Search icon"
-            class="h-[18px] w-[18px]"
+            alt=""
+            class="h-[18px] w-[18px] 2xl:hidden"
           />
+          <span
+            class="hidden text-[12px] font-medium leading-[100%] tracking-[0%] text-white 2xl:block 2xl:text-[14px] 2xl:font-normal"
+            >Sell Something</span
+          >
         </button>
       </div>
     </header>
     <main>
+      <!-- Aside, Hero and Cards Sections -->
       <section
-        class="flex flex-col items-center gap-[20px] px-[20px] md:gap-[24px] md:px-[32px] lg:gap-[28px] lg:px-[48px] xl:gap-[32px] xl:px-[56px]"
+        class="flex flex-col items-center gap-[20px] px-[20px] md:gap-[24px] md:px-[32px] lg:gap-[28px] lg:px-[48px] xl:gap-[32px] xl:px-[56px] 2xl:mx-auto 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px] 2xl:flex-row 2xl:items-start 2xl:gap-[20px] 2xl:px-0"
       >
+        <!-- Aside -->
         <aside
-          class="order-2 w-[375px] rounded-[24px] bg-[#F8F8F8] md:w-full md:max-w-[560px] lg:max-w-[680px] xl:max-w-[760px]"
+          class="order-2 w-full max-w-[375px] rounded-[24px] bg-[#F8F8F8] md:max-w-[560px] lg:max-w-[680px] xl:max-w-[760px] 2xl:order-1 2xl:h-[701px] 2xl:w-[395px] 2xl:max-w-[395px]"
         >
           <form>
             <div
-              class="px-[20px] pt-[24px] md:px-[32px] md:pt-[28px] lg:px-[40px] lg:pt-[32px] xl:px-[44px] xl:pt-[36px]"
+              class="px-[20px] pt-[24px] md:px-[32px] md:pt-[28px] lg:px-[40px] lg:pt-[32px] xl:px-[44px] xl:pt-[36px] 2xl:px-[32px] 2xl:pt-[32px]"
             >
               <h2
-                class="mb-[16px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px] xl:mb-[24px]"
+                class="mb-[16px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px] xl:mb-[24px] 2xl:mb-[16px]"
               >
                 Location
               </h2>
 
               <select
                 name="location"
-                class="mb-[32px] h-[41px] w-full rounded-[10px] border border-black/10 bg-[#F8F8F8] pl-[18px] pr-[8px] text-[14px] font-normal leading-[100%] tracking-[0%] text-black outline-none md:h-[44px] lg:h-[46px] xl:h-[48px] xl:text-[15px]"
+                class="mb-[32px] h-[41px] w-full rounded-[10px] border border-black/10 bg-[#F8F8F8] pl-[18px] pr-[8px] text-[14px] font-normal leading-[100%] tracking-[0%] text-black outline-none md:h-[44px] lg:h-[46px] xl:h-[48px] xl:text-[15px] 2xl:h-[48px] 2xl:text-[14px]"
               >
                 <option value="all" selected>All Kenya</option>
                 <option value="nairobi">Nairobi</option>
@@ -90,281 +104,289 @@
               </select>
             </div>
 
-            <div class="px-[20px] md:px-[32px] lg:px-[40px] xl:px-[44px]">
+            <div
+              class="px-[20px] md:px-[32px] lg:px-[40px] xl:px-[44px] 2xl:px-[32px]"
+            >
               <h2
-                class="mb-[13px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px] xl:mb-[24px]"
+                class="mb-[13px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px] xl:mb-[24px] 2xl:mb-[13px]"
               >
                 Property
               </h2>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="houses-rent"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Houses & Apartments for Rent
                   <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="houses-sale"
                   checked
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Houses & Apartments for Sale
                   <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="land-rent"
                   checked
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Land & Plots for Rent <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="land-sale"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Land & Plots for Sale <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="commercial-rent"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Commercial Property for Rent
                   <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="commercial-sale"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Commercial Property for Sale
                   <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="event-centres"
                   checked
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Event Centres, Venues & Worksta
                   <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="short-let"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Short Let Property <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="land-sale-2"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Land & Plots for Sale <span class="opacity-80">| 9548</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="property"
                   value="commercial-rent-2"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Commercial Property for Rent
                   <span class="opacity-80">| 9548</span>
                 </span>
               </label>
             </div>
 
-            <div class="h-[41px] md:h-[52px] lg:h-[60px] xl:h-[68px]"></div>
+            <div
+              class="h-[41px] md:h-[52px] lg:h-[60px] xl:h-[68px] 2xl:h-[49px]"
+            ></div>
 
-            <div class="px-[20px] md:px-[32px] lg:px-[40px] xl:px-[44px]">
+            <div
+              class="px-[20px] md:px-[32px] lg:px-[40px] xl:px-[44px] 2xl:px-[32px]"
+            >
               <h2
-                class="mb-[13px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px] xl:mb-[24px]"
+                class="mb-[13px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black md:mb-[20px] lg:mb-[22px] xl:mb-[24px] 2xl:mb-[13px] 2xl:text-[16px] 2xl:font-medium"
               >
                 Price Range
               </h2>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="price"
                   value="under-13k"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   Under 13 K <span class="opacity-80">• 2183 ads</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="price"
                   value="13k-160k"
                   checked
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   13 - 160 K <span class="opacity-80">• 2183 ads</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="price"
                   value="160k-6m"
                   checked
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   160 K - 6 M <span class="opacity-80">• 2183 ads</span>
                 </span>
               </label>
 
               <label
-                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%]"
+                class="mb-[10px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[14px] md:text-[15px] md:leading-[120%] 2xl:mb-[10px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="price"
                   value="6m-55m"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   6 - 55 M <span class="opacity-80">• 2183 ads</span>
                 </span>
               </label>
 
               <label
-                class="mb-[32px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[36px] md:text-[15px] md:leading-[120%]"
+                class="mb-[32px] flex items-center text-[14px] font-normal leading-[100%] tracking-[0%] text-black md:mb-[36px] md:text-[15px] md:leading-[120%] 2xl:mb-[32px] 2xl:text-[14px] 2xl:leading-[100%]"
               >
                 <input
                   type="checkbox"
                   name="price"
                   value="6m-55m-2"
-                  class="h-[16px] w-[16px] rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
+                  class="h-[16px] w-[16px] shrink-0 rounded-[3px] border-[1.4px] border-[#29B24E] accent-[#29B24E] opacity-90"
                 />
-                <span class="ml-[12px]">
+                <span class="ml-[12px] 2xl:whitespace-nowrap">
                   6 - 55 M <span class="opacity-80">• 2183 ads</span>
                 </span>
               </label>
             </div>
           </form>
         </aside>
-        <div class="order-1">
+        <!-- Hero -->
+        <div class="order-1 2xl:order-2 2xl:flex-1">
           <div
-            class="relative w-[335px] mx-auto md:w-full md:max-w-[704px] lg:max-w-[928px] xl:max-w-[1120px]"
+            class="relative w-[335px] mx-auto md:w-full md:max-w-[704px] lg:max-w-[928px] xl:max-w-[1120px] 2xl:h-[701px] 2xl:w-full 2xl:max-w-none"
           >
             <img
               src="src/assets/images/main-photo.jpg"
               alt="City view"
-              class="h-[435px] w-[335px] rounded-[24px] bg-[#D9D9D9] object-cover md:w-full lg:h-[480px] xl:h-[560px]"
+              class="h-[435px] w-[335px] rounded-[24px] bg-[#D9D9D9] object-cover md:w-full lg:h-[480px] xl:h-[560px] 2xl:h-[701px] 2xl:w-full"
             />
             <div class="absolute inset-0 z-10">
               <h1
-                class="mt-[32px] mb-[8px] mx-[47px] text-center text-[24px] font-semibold leading-[100%] text-black/80 md:mt-[40px] md:mx-auto md:max-w-[420px] md:text-[32px] md:leading-[110%] lg:mt-[48px] lg:max-w-[520px] lg:text-[40px] xl:mt-[56px] xl:max-w-[620px] xl:text-[44px]"
+                class="mt-[32px] mb-[8px] mx-[47px] text-center text-[24px] font-semibold leading-[100%] text-black/80 md:mt-[40px] md:mx-auto md:max-w-[420px] md:text-[32px] md:leading-[110%] lg:mt-[48px] lg:max-w-[520px] lg:text-[40px] xl:mt-[56px] xl:max-w-[620px] xl:text-[44px] 2xl:mt-[60px] 2xl:mb-[10px] 2xl:max-w-none 2xl:text-[48px] 2xl:font-semibold"
               >
                 Find the house you want easily
               </h1>
               <p
-                class="mx-auto w-[300px] text-center text-[14px] font-normal leading-[100%] text-black opacity-70 md:w-auto md:max-w-[420px] md:text-[16px] md:leading-[120%] lg:max-w-[520px] lg:text-[18px] xl:max-w-[620px] xl:text-[20px]"
+                class="mx-auto w-[300px] text-center text-[14px] font-normal leading-[100%] text-black opacity-70 md:w-auto md:max-w-[420px] md:text-[16px] md:leading-[120%] lg:max-w-[520px] lg:text-[18px] xl:max-w-[620px] xl:text-[20px] 2xl:mb-[40px] 2xl:max-w-none 2xl:text-[16px]"
               >
                 Buy, sell, rent or lease on just one platform
               </p>
               <form
-                class="hidden md:block absolute inset-x-[32px] bottom-[24px] lg:inset-x-[48px] lg:bottom-[32px] xl:inset-x-[64px] xl:bottom-[40px]"
+                class="hidden md:block absolute inset-x-[32px] bottom-[24px] lg:inset-x-[48px] lg:bottom-[32px] xl:inset-x-[64px] xl:bottom-[40px] 2xl:static"
               >
                 <div
-                  class="relative mx-auto md:max-w-[420px] lg:max-w-[520px] xl:max-w-[660px]"
+                  class="relative mx-auto md:max-w-[420px] lg:max-w-[520px] xl:max-w-[660px] 2xl:w-[324px] 2xl:max-w-[324px]"
                 >
                   <input
                     type="text"
+                    aria-label="Search"
                     placeholder="Search..."
-                    class="h-[46px] w-full rounded-[23px] bg-white pl-[18px] pr-[52px] text-[14px] font-normal text-black/80 shadow-[0_12px_30px_rgba(0,0,0,0.08)] outline-none md:h-[48px] md:rounded-[24px] md:pl-[18px] md:pr-[52px] md:text-[14px] lg:h-[54px] lg:rounded-[27px] lg:pl-[22px] lg:pr-[58px] lg:text-[15px] xl:h-[60px] xl:rounded-[30px] xl:pl-[26px] xl:pr-[68px] xl:text-[17px]"
+                    class="h-[46px] w-full rounded-[23px] bg-white pl-[18px] pr-[52px] text-[14px] font-normal text-black/80 shadow-[0_12px_30px_rgba(0,0,0,0.08)] outline-none md:h-[48px] md:rounded-[24px] md:pl-[18px] md:pr-[52px] md:text-[14px] lg:h-[54px] lg:rounded-[27px] lg:pl-[22px] lg:pr-[58px] lg:text-[15px] xl:h-[60px] xl:rounded-[30px] xl:pl-[26px] xl:pr-[68px] xl:text-[17px] 2xl:h-[40px] 2xl:rounded-[10px] 2xl:pl-[18px] 2xl:pr-[44px] 2xl:text-[12px] 2xl:shadow-none"
                   />
                   <img
                     src="src/assets/icons/search.png"
                     alt="Search icon"
-                    class="absolute right-[18px] top-1/2 h-[16px] w-[16px] -translate-y-1/2 md:right-[18px] md:h-[16px] md:w-[16px] lg:right-[22px] lg:h-[18px] lg:w-[18px] xl:right-[26px] xl:h-[20px] xl:w-[20px]"
+                    class="absolute right-[18px] top-1/2 h-[16px] w-[16px] -translate-y-1/2 md:right-[18px] md:h-[16px] md:w-[16px] lg:right-[22px] lg:h-[18px] lg:w-[18px] xl:right-[26px] xl:h-[20px] xl:w-[20px] 2xl:right-[16px] 2xl:h-[16px] 2xl:w-[16px]"
                   />
                 </div>
               </form>
@@ -372,17 +394,17 @@
           </div>
         </div>
       </section>
-      <!-- Section 2: Trending Ads -->
+      <!-- Cards -->
       <section
-        class="mx-auto mt-[32px] mb-[40px] max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:max-w-[1045px]"
+        class="mx-auto mt-[32px] mb-[40px] max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:max-w-[1045px] 2xl:mt-[40px] 2xl:mb-[120px] 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px]"
       >
         <h2
-          class="mb-[12px] text-[18px] font-medium leading-[100%] tracking-[0%] text-black"
+          class="mb-[12px] text-[18px] font-medium leading-[100%] tracking-[0%] text-black 2xl:mb-[20px] 2xl:text-[18px]"
         >
           Trending Ads
         </h2>
         <div
-          class="flex flex-col items-center gap-[20px] md:gap-[24px] lg:gap-[28px] xl:mx-auto xl:max-w-[1045px] xl:flex-row xl:flex-wrap xl:items-start xl:justify-start xl:gap-x-[20px] xl:gap-y-[24px]"
+          class="listing-card-grid flex flex-col items-center gap-[20px] md:gap-[24px] lg:gap-[28px] xl:mx-auto xl:max-w-[1045px] xl:flex-row xl:flex-wrap xl:items-start xl:justify-start xl:gap-x-[20px] xl:gap-y-[24px] 2xl:grid 2xl:max-w-[1640px] 2xl:grid-cols-4 2xl:gap-x-[20px] 2xl:gap-y-[20px]"
         >
           <a
             href="./home.html"
@@ -423,7 +445,7 @@
                   Kajiado, Namanga
                 </p>
                 <p
-                  class="mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
                 >
                   1450$
                   <span
@@ -482,7 +504,7 @@
                   Kajiado, Namanga
                 </p>
                 <p
-                  class="mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
                 >
                   1450$
                   <span
@@ -541,7 +563,7 @@
                   Kajiado, Namanga
                 </p>
                 <p
-                  class="mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
                 >
                   1450$
                   <span
@@ -600,7 +622,7 @@
                   Kajiado, Namanga
                 </p>
                 <p
-                  class="mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
                 >
                   1450$
                   <span
@@ -659,7 +681,7 @@
                   Kajiado, Namanga
                 </p>
                 <p
-                  class="mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
                 >
                   1450$
                   <span
@@ -718,7 +740,7 @@
                   Kajiado, Namanga
                 </p>
                 <p
-                  class="mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
                 >
                   1450$
                   <span
@@ -777,7 +799,7 @@
                   Kajiado, Namanga
                 </p>
                 <p
-                  class="mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
                 >
                   1450$
                   <span
@@ -799,7 +821,7 @@
           </a>
           <a
             href="./home.html"
-            class="hidden w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:hidden xl:w-[335px] xl:max-w-[335px]"
+            class="hidden w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:hidden xl:w-[335px] xl:max-w-[335px] 2xl:block"
           >
             <article
               class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
@@ -836,7 +858,7 @@
                   Kajiado, Namanga
                 </p>
                 <p
-                  class="mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
                 >
                   1450$
                   <span
@@ -859,68 +881,74 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div
-        class="mx-auto mb-[156px] h-[326px] w-[375px] rounded-[24px] bg-[#29B24E] md:mb-[160px] md:h-[342px] md:w-[420px] lg:mb-[166px] lg:h-[356px] lg:w-[520px] xl:mb-[172px] xl:h-[368px] xl:w-[620px]"
+        class="mx-auto mb-[156px] h-[326px] w-full max-w-[375px] rounded-[24px] bg-[#29B24E] md:mb-[160px] md:h-[342px] md:max-w-[420px] lg:mb-[166px] lg:h-[356px] lg:max-w-[520px] xl:mb-[172px] xl:h-[368px] xl:max-w-[620px] 2xl:mb-[0px] 2xl:h-[179px] 2xl:max-w-[1920px]"
       >
         <div
-          class="flex justify-between px-[20px] pt-[40px] md:px-[24px] md:pt-[44px] lg:px-[28px] lg:pt-[48px] xl:px-[32px] xl:pt-[52px]"
+          class="flex justify-between px-[20px] pt-[40px] md:px-[24px] md:pt-[44px] lg:px-[28px] lg:pt-[48px] xl:px-[32px] xl:pt-[52px] 2xl:mx-auto 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px] 2xl:px-0 2xl:pt-[40px]"
         >
           <div
-            class="flex flex-col gap-[22px] md:gap-[24px] lg:gap-[26px] xl:gap-[28px]"
+            class="flex flex-col gap-[22px] md:gap-[24px] lg:gap-[26px] xl:gap-[28px] 2xl:flex-row 2xl:gap-[48px]"
           >
             <a
               href="./index.html"
-              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px]"
+              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px]"
             >
               Home
             </a>
             <a
               href="#"
-              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px]"
+              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px]"
             >
               Discover
             </a>
             <a
               href="#"
-              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px]"
+              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px]"
             >
               Contact us
             </a>
             <a
               href="#"
-              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px]"
+              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px]"
             >
               Sign in
             </a>
           </div>
-          <div class="hidden">
-            <p>Support@Roberts.com</p>
+          <div class="hidden 2xl:block">
+            <p
+              class="text-[14px] font-medium leading-[100%] tracking-[0%] text-[#FFFFFF]"
+            >
+              Support@Roberts.com
+            </p>
           </div>
+
           <div
-            class="flex flex-col items-end gap-[22px] text-right md:gap-[24px] lg:gap-[26px] xl:gap-[28px]"
+            class="flex flex-col items-end gap-[22px] text-right md:gap-[24px] lg:gap-[26px] xl:gap-[28px] 2xl:flex-row 2xl:gap-[48px]"
           >
             <a
               href="#"
-              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px]"
+              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px] 2xl:font-medium"
             >
               Facebook
             </a>
             <a
               href="#"
-              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px]"
+              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px] 2xl:font-medium"
             >
               Instagram
             </a>
             <a
               href="#"
-              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px]"
+              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px] 2xl:font-medium"
             >
               Youtube
             </a>
             <a
               href="#"
-              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px]"
+              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px] 2xl:font-medium"
             >
               Twitter
             </a>
@@ -928,23 +956,21 @@
         </div>
 
         <div
-          class="mx-auto mb-[40px] mt-[40px] h-px w-[335px] rounded-[40px] bg-[#D0D0D0] md:mb-[44px] md:mt-[44px] md:w-[372px] lg:mb-[48px] lg:mt-[48px] lg:w-[464px] xl:w-[556px]"
+          class="mx-auto mb-[40px] mt-[40px] h-px w-[335px] rounded-[40px] bg-[#D0D0D0] md:mb-[44px] md:mt-[44px] md:w-[372px] lg:mb-[48px] lg:mt-[48px] lg:w-[464px] xl:w-[556px] 2xl:mb-[32px] 2xl:mt-[32px] 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px]"
         ></div>
 
-        <div class="hidden">
-          <p>Support@Roberts.com</p>
-        </div>
         <div>
           <p
-            class="text-center text-[14px] font-normal leading-[100%] tracking-[0%] text-white md:text-[15px] lg:text-[16px] xl:text-[17px]"
+            class="text-center text-[14px] font-normal leading-[100%] tracking-[0%] text-white md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[14px] 2xl:font-medium"
           >
             © 2022 Robert.co.ke Gibraltar
           </p>
         </div>
       </div>
     </footer>
+    <!-- Mobile navigation -->
     <nav
-      class="fixed inset-x-0 bottom-0 z-10 mx-auto h-[72px] w-[375px] rounded-tl-[24px] rounded-tr-[24px] bg-white md:h-[76px] md:w-[420px] lg:h-[82px] lg:w-[520px] xl:h-[88px] xl:w-[620px]"
+      class="fixed inset-x-0 bottom-0 z-10 mx-auto h-[72px] w-full max-w-[375px] rounded-tl-[24px] rounded-tr-[24px] bg-white md:h-[76px] md:max-w-[420px] lg:h-[82px] lg:max-w-[520px] xl:h-[88px] xl:max-w-[620px] 2xl:hidden"
       aria-label="Mobile navigation"
     >
       <div
