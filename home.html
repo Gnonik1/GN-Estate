@@ -5,26 +5,652 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homes - GNestate</title>
     <link rel="stylesheet" href="src/styles/main.css" />
-    <!-- <link
+    <link
       rel="shortcut icon"
-      href="src/assets/logos/smile.png"
+      href="src/assets/logos/logo.png"
       type="image/png"
-    /> -->
-    <meta name="description" content="Making estate site homes page" />
+    />
+    <meta
+      name="description"
+      content="Apartment details and similar real estate ads on GNestate"
+    />
     <meta name="author" content="Gnonik1" />
     <meta property="og:url" content="https://gnonik1.github.io/GN-Estate/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Homes - GNestate" />
-    <meta property="og:description" content="Making estate site homes page" />
-    <!-- <meta
+    <meta
+      property="og:description"
+      content="Apartment details and similar real estate ads on GNestate"
+    />
+    <meta
       property="og:image"
-      content="https://github.com/Gnonik1/Tailwind-Check/blob/main/src/assets/logos/smile.png?raw=true"
-    /> -->
+      content="https://github.com/Gnonik1/GN-Estate/blob/main/src/assets/images/main-photo.jpg?raw=true"
+    />
     <meta
       name="google-site-verification"
       content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="
     />
     <meta name="robots" content="index,follow" />
   </head>
-  <body></body>
+  <body class="bg-gray-200 font-['Poppins']">
+    <header class="hidden 2xl:block">
+      <div
+        class="mx-auto mb-[42px] mt-[42px] flex w-[calc(100%_-_280px)] max-w-[1640px] items-center justify-between"
+      >
+        <a href="./index.html">
+          <img
+            src="src/assets/logos/logo.png"
+            alt="GN Estate logo"
+            class="h-[48px] w-[48px]"
+          />
+        </a>
+        <nav>
+          <ul
+            class="flex items-center gap-[48px] text-[14px] font-normal leading-[100%] tracking-[0%] text-black"
+          >
+            <li>
+              <a href="./index.html" class="relative"
+                >Home<span
+                  class="absolute left-1/2 top-[22px] h-[2px] w-[42px] -translate-x-1/2 bg-[#29B24E]"
+                ></span
+              ></a>
+            </li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Sign in</a></li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="flex h-[47px] w-[156px] cursor-pointer items-center justify-center gap-[10px] rounded-[12px] bg-[#29B24E] text-[14px] font-normal leading-[100%] tracking-[0%] text-white"
+        >
+          Sell Something
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="pt-[20px] md:px-[32px] md:pt-[32px] lg:px-[48px] lg:pt-[40px] xl:px-[56px] xl:pt-[48px] 2xl:mx-auto 2xl:flex 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px] 2xl:items-start 2xl:gap-[40px] 2xl:px-0 2xl:pt-0"
+      >
+        <img
+          src="src/assets/images/house3.jpg"
+          alt="Modern apartment exterior"
+          class="mx-auto mb-[42px] h-[316px] w-full max-w-[335px] rounded-[12px] object-cover md:mb-[48px] md:h-[396px] md:max-w-[420px] lg:mb-[56px] lg:h-[492px] lg:max-w-[520px] xl:mb-[64px] xl:h-[586px] xl:max-w-[620px] 2xl:hidden"
+        />
+
+        <article
+          class="w-full rounded-[24px] bg-[#F8F8F8] pb-[45px] 2xl:mt-0 2xl:min-h-[732px] 2xl:flex-1 2xl:rounded-[20px] 2xl:border-[2px] 2xl:border-[#009EFF] 2xl:px-[40px] 2xl:pb-[28px] 2xl:pt-[32px]"
+        >
+          <div class="flex flex-nowrap items-start">
+            <span
+              class="ml-[20px] mr-[24px] mt-[10px] flex h-[28px] w-[76px] shrink-0 items-center justify-center rounded-[15px] bg-[#29B24E] text-[12px] font-medium leading-[100%] tracking-[0%] text-white 2xl:ml-0 2xl:mr-0 2xl:mt-0 2xl:h-[30px]"
+              >VIP TOP+</span
+            >
+            <span
+              class="mr-[36px] mt-[18px] w-[107px] shrink-0 text-[12px] font-medium leading-[100%] tracking-[0%] text-black opacity-60 2xl:ml-auto 2xl:mr-[76px] 2xl:mt-[3px]"
+              >Posted 1 hour ago</span
+            >
+            <img
+              src="src/assets/icons/eye.png"
+              alt=""
+              class="mr-[10px] mt-[16px] h-[16px] w-[16px] shrink-0 2xl:mt-0"
+            />
+            <span
+              class="mr-[20px] mt-[18px] w-[53px] shrink-0 text-[12px] font-medium leading-[100%] tracking-[0%] text-black opacity-60 2xl:mr-0 2xl:mt-[3px]"
+              >842 view</span
+            >
+          </div>
+
+          <h1
+            class="ml-[20px] mt-[26px] text-[18px] font-semibold leading-[29px] tracking-[0%] text-black opacity-90 md:text-[20px] md:leading-[32px] lg:text-[22px] lg:leading-[34px] 2xl:ml-0 2xl:mt-[32px] 2xl:text-[22px] 2xl:leading-[100%]"
+          >
+            2bdrm Apartment in Yatch, Thindigua/Kasarini for Rent
+          </h1>
+          <p
+            class="ml-[20px] mt-[8px] text-[12px] font-normal leading-[100%] tracking-[0%] text-black opacity-60 2xl:ml-0 2xl:mt-[18px]"
+          >
+            Kiambu, Kiambu / Kiambu, Thindigua/Kasarini
+          </p>
+          <p
+            class="ml-[20px] mr-[20px] mt-[24px] text-[12px] font-normal leading-[23px] tracking-[0%] text-black opacity-80 md:text-[13px] md:leading-[24px] lg:text-[14px] lg:leading-[25px] 2xl:ml-0 2xl:mr-0 2xl:mt-[34px] 2xl:text-[14px] 2xl:leading-[140%]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor rhoncus dolor purus non enim praesent elementum facilisis
+            leo, vel fringilla est ullamcorper eget
+          </p>
+
+          <div
+            class="ml-[20px] mt-[16px] flex gap-[24px] border-y border-[#ECECEC] py-[16px] text-[14px] font-medium leading-[100%] tracking-[0%] text-black opacity-80 md:gap-[34px] lg:gap-[48px] xl:gap-[56px] 2xl:ml-0 2xl:mt-[36px] 2xl:gap-[42px] 2xl:py-[24px]"
+          >
+            <span>Apartament</span>
+            <span>3 bedroom</span>
+            <span>2 bathroom</span>
+            <span class="hidden md:inline">Parking</span>
+          </div>
+
+          <div
+            class="mx-[20px] mb-[16px] mt-[20px] flex flex-col gap-[12px] text-[12px] font-normal leading-[100%] tracking-[0%] md:gap-[14px] lg:gap-[16px] xl:grid xl:grid-cols-2 xl:gap-x-[40px] xl:gap-y-[18px] 2xl:mx-0 2xl:grid-cols-3 2xl:gap-x-[56px] 2xl:gap-y-[22px] 2xl:py-[28px] 2xl:text-[12px]"
+          >
+            <div class="flex justify-between gap-[20px] 2xl:block">
+              <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
+                Property address
+              </p>
+              <p
+                class="text-right text-[14px] font-medium text-black opacity-80 2xl:text-left 2xl:text-[12px] 2xl:opacity-100"
+              >
+                mombasa rd
+              </p>
+            </div>
+            <div class="flex justify-between gap-[12px] 2xl:block">
+              <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
+                Condition
+              </p>
+              <p
+                class="text-right text-[14px] font-medium text-black opacity-80 2xl:text-left 2xl:text-[12px] 2xl:opacity-100"
+              >
+                Fairly Used
+              </p>
+            </div>
+            <div class="flex justify-between gap-[12px] 2xl:block">
+              <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
+                Condition
+              </p>
+              <p
+                class="text-right text-[14px] font-medium text-black opacity-80 2xl:text-left 2xl:text-[12px] 2xl:opacity-100"
+              >
+                Fairly Used
+              </p>
+            </div>
+            <div class="flex justify-between gap-[12px] 2xl:block">
+              <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
+                Facilities
+              </p>
+              <p
+                class="max-w-[180px] text-right text-[14px] font-medium leading-[23px] text-black opacity-80 2xl:max-w-none 2xl:text-left 2xl:text-[12px] 2xl:leading-[150%] 2xl:opacity-100"
+              >
+                24-hour Electricity, Dining Area, En Suite, Hot Water, Kitchen
+                Cabinets, Kitchen Shelf, Microwave, Refrigerator
+              </p>
+            </div>
+            <div class="flex justify-between gap-[12px] 2xl:block">
+              <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
+                Estate name
+              </p>
+              <p
+                class="text-right text-[14px] font-medium text-black opacity-80 2xl:text-left 2xl:text-[12px] 2xl:opacity-100"
+              >
+                Next Gen
+              </p>
+            </div>
+            <div class="flex justify-between gap-[12px] 2xl:block">
+              <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
+                Furnishing
+              </p>
+              <p
+                class="text-right text-[14px] font-medium leading-[23px] text-black opacity-80 2xl:text-left 2xl:text-[12px] 2xl:leading-[150%] 2xl:opacity-100"
+              >
+                Semi-Furnished
+              </p>
+            </div>
+            <div class="flex justify-between gap-[12px] 2xl:block">
+              <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
+                Property size
+              </p>
+              <p
+                class="text-right text-[14px] font-medium text-black opacity-80 2xl:text-left 2xl:text-[12px] 2xl:opacity-100"
+              >
+                220 sq.m.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-[#ECECEC] pt-[16px] 2xl:flex 2xl:items-center 2xl:justify-between 2xl:pt-[28px]"
+          >
+            <p
+              class="mb-[40px] ml-[51px] text-[22px] font-semibold leading-[100%] tracking-[0%] text-[#29B24E] 2xl:mb-0 2xl:ml-0 2xl:text-[36px]"
+            >
+              1450$<span
+                class="text-[10px] font-normal text-black 2xl:text-[14px]"
+                >/ Month</span
+              >
+            </p>
+            <div
+              class="mx-[20px] flex flex-col gap-[10px] 2xl:mx-0 2xl:mt-0 2xl:flex-row 2xl:gap-[14px]"
+            >
+              <button
+                type="button"
+                class="order-2 h-[38px] rounded-[10px] border border-[#29B24E] bg-white text-[12px] font-normal leading-[100%] tracking-[0%] text-[#29B24E] 2xl:order-1 2xl:h-[42px] 2xl:w-[153px] 2xl:text-[14px]"
+              >
+                Sent message
+              </button>
+              <button
+                type="button"
+                class="order-1 h-[38px] rounded-[10px] bg-[#29B24E] text-[12px] font-normal leading-[100%] tracking-[0%] text-white 2xl:order-2 2xl:h-[42px] 2xl:w-[80px] 2xl:text-[14px]"
+              >
+                Call
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="mx-auto mt-[40px] max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:max-w-[1045px] 2xl:mt-[80px] 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px]"
+      >
+        <h2
+          class="mb-[20px] text-[16px] font-medium leading-[100%] tracking-[0%] text-black 2xl:mb-[24px] 2xl:text-[18px]"
+        >
+          Similar ads
+        </h2>
+        <div
+          class="listing-card-grid flex flex-col items-center gap-[20px] md:gap-[24px] lg:gap-[28px] xl:mx-auto xl:max-w-[1045px] xl:flex-row xl:flex-wrap xl:items-start xl:justify-start xl:gap-x-[20px] xl:gap-y-[24px] 2xl:grid 2xl:max-w-[1640px] 2xl:grid-cols-4 2xl:gap-[20px]"
+        >
+          <a
+            href="./home.html"
+            class="mb-[74px] w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:mb-[74px] xl:w-[335px] xl:max-w-[335px] 2xl:mb-0 2xl:max-w-none"
+          >
+            <article
+              class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
+            >
+              <div class="relative mb-[28px] ml-[16px] mr-[16px] pt-[16px]">
+                <img
+                  src="src/assets/images/house1.jpg"
+                  alt="Apartment in Mombasa"
+                  class="h-[202px] w-[303px] rounded-[20px] object-cover md:h-[258px] md:w-[388px] lg:h-[326px] lg:w-[488px] xl:hidden xl:h-[202px] xl:w-[303px]"
+                />
+                <img
+                  src="src/assets/images/house3.jpg"
+                  alt="Apartment in Mombasa"
+                  class="hidden h-[202px] w-[303px] rounded-[20px] object-cover xl:block"
+                />
+                <span
+                  class="absolute left-[12px] top-[28px] flex h-[30px] w-[76px] items-center justify-center rounded-[15px] border border-[#29B24E] bg-[#29B24E] text-[12px] font-medium leading-[100%] tracking-[0%] text-white"
+                  >VIP TOP+</span
+                >
+                <span
+                  class="absolute -bottom-[20px] right-[12px] flex h-[40px] w-[40px] items-center justify-center rounded-full border border-white bg-white"
+                >
+                  <img
+                    src="src/assets/icons/frame.png"
+                    alt="Save listing"
+                    class="h-[18px] w-[18px] md:h-[20px] md:w-[20px] lg:h-[20px] lg:w-[20px] xl:h-[18px] xl:w-[18px]"
+                  />
+                </span>
+              </div>
+              <div>
+                <h3
+                  class="ml-[20px] text-[14px] font-medium leading-[100%] tracking-[0%] text-black md:text-[16px] lg:text-[18px] xl:text-[14px]"
+                >
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <p
+                  class="ml-[20px] mt-[10px] text-[12px] font-normal leading-[100%] tracking-[0%] text-black opacity-50 md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                >
+                  Kajiado, Namanga
+                </p>
+                <p
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                >
+                  1450$<span
+                    class="text-[12px] font-normal text-black md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                    >/ Month</span
+                  >
+                </p>
+                <div
+                  class="mb-[24px] h-px w-[335px] rounded-[2px] bg-[#CFEAD6] md:w-[420px] lg:w-[520px] xl:w-[335px]"
+                ></div>
+                <div
+                  class="mx-[20px] flex items-center justify-between text-[12px] font-normal leading-[100%] tracking-[0%] text-black md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                >
+                  <span>5 Bedroom</span><span>3 bathroom</span
+                  ><span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a
+            href="./home.html"
+            class="hidden w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:block xl:w-[335px] xl:max-w-[335px] 2xl:max-w-none"
+          >
+            <article
+              class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
+            >
+              <div class="relative mb-[28px] ml-[16px] mr-[16px] pt-[16px]">
+                <img
+                  src="src/assets/images/house2.jpg"
+                  alt="House in Nairobi"
+                  class="h-[202px] w-[303px] rounded-[20px] object-cover md:h-[258px] md:w-[388px] lg:h-[326px] lg:w-[488px] xl:h-[202px] xl:w-[303px]"
+                />
+                <span
+                  class="absolute left-[12px] top-[28px] flex h-[30px] w-[76px] items-center justify-center rounded-[15px] border border-[#29B24E] bg-[#29B24E] text-[12px] font-medium leading-[100%] tracking-[0%] text-white"
+                  >VIP TOP+</span
+                >
+                <span
+                  class="absolute -bottom-[20px] right-[12px] flex h-[40px] w-[40px] items-center justify-center rounded-full border border-white bg-white"
+                >
+                  <img
+                    src="src/assets/icons/frame.png"
+                    alt="Save listing"
+                    class="h-[18px] w-[18px] md:h-[20px] md:w-[20px] lg:h-[20px] lg:w-[20px] xl:h-[18px] xl:w-[18px]"
+                  />
+                </span>
+              </div>
+              <div>
+                <h3
+                  class="ml-[20px] text-[14px] font-medium leading-[100%] tracking-[0%] text-black md:text-[16px] lg:text-[18px] xl:text-[14px]"
+                >
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <p
+                  class="ml-[20px] mt-[10px] text-[12px] font-normal leading-[100%] tracking-[0%] text-black opacity-50 md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                >
+                  Kajiado, Namanga
+                </p>
+                <p
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                >
+                  1450$<span
+                    class="text-[12px] font-normal text-black md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                    >/ Month</span
+                  >
+                </p>
+                <div
+                  class="mb-[24px] h-px w-[335px] rounded-[2px] bg-[#CFEAD6] md:w-[420px] lg:w-[520px] xl:w-[335px]"
+                ></div>
+                <div
+                  class="mx-[20px] flex items-center justify-between text-[12px] font-normal leading-[100%] tracking-[0%] text-black md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                >
+                  <span>5 Bedroom</span><span>3 bathroom</span
+                  ><span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a
+            href="./home.html"
+            class="hidden w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:hidden xl:w-[335px] xl:max-w-[335px] 2xl:block 2xl:max-w-none"
+          >
+            <article
+              class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
+            >
+              <div class="relative mb-[28px] ml-[16px] mr-[16px] pt-[16px]">
+                <img
+                  src="src/assets/images/house3.jpg"
+                  alt="Apartment in Mombasa"
+                  class="h-[202px] w-[303px] rounded-[20px] object-cover md:h-[258px] md:w-[388px] lg:h-[326px] lg:w-[488px] xl:h-[202px] xl:w-[303px]"
+                />
+                <span
+                  class="absolute left-[12px] top-[28px] flex h-[30px] w-[76px] items-center justify-center rounded-[15px] border border-[#29B24E] bg-[#29B24E] text-[12px] font-medium leading-[100%] tracking-[0%] text-white"
+                  >VIP TOP+</span
+                >
+                <span
+                  class="absolute -bottom-[20px] right-[12px] flex h-[40px] w-[40px] items-center justify-center rounded-full border border-white bg-white"
+                >
+                  <img
+                    src="src/assets/icons/frame.png"
+                    alt="Save listing"
+                    class="h-[18px] w-[18px] md:h-[20px] md:w-[20px] lg:h-[20px] lg:w-[20px] xl:h-[18px] xl:w-[18px]"
+                  />
+                </span>
+              </div>
+              <div>
+                <h3
+                  class="ml-[20px] text-[14px] font-medium leading-[100%] tracking-[0%] text-black md:text-[16px] lg:text-[18px] xl:text-[14px]"
+                >
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <p
+                  class="ml-[20px] mt-[10px] text-[12px] font-normal leading-[100%] tracking-[0%] text-black opacity-50 md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                >
+                  Kajiado, Namanga
+                </p>
+                <p
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                >
+                  1450$<span
+                    class="text-[12px] font-normal text-black md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                    >/ Month</span
+                  >
+                </p>
+                <div
+                  class="mb-[24px] h-px w-[335px] rounded-[2px] bg-[#CFEAD6] md:w-[420px] lg:w-[520px] xl:w-[335px]"
+                ></div>
+                <div
+                  class="mx-[20px] flex items-center justify-between text-[12px] font-normal leading-[100%] tracking-[0%] text-black md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                >
+                  <span>5 Bedroom</span><span>3 bathroom</span
+                  ><span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a
+            href="./home.html"
+            class="hidden w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:block xl:w-[335px] xl:max-w-[335px] 2xl:max-w-none"
+          >
+            <article
+              class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
+            >
+              <div class="relative mb-[28px] ml-[16px] mr-[16px] pt-[16px]">
+                <img
+                  src="src/assets/images/house1.jpg"
+                  alt="House in Namanga"
+                  class="h-[202px] w-[303px] rounded-[20px] object-cover md:h-[258px] md:w-[388px] lg:h-[326px] lg:w-[488px] xl:h-[202px] xl:w-[303px]"
+                />
+                <span
+                  class="absolute left-[12px] top-[28px] flex h-[30px] w-[76px] items-center justify-center rounded-[15px] border border-[#29B24E] bg-[#29B24E] text-[12px] font-medium leading-[100%] tracking-[0%] text-white"
+                  >VIP TOP+</span
+                >
+                <span
+                  class="absolute -bottom-[20px] right-[12px] flex h-[40px] w-[40px] items-center justify-center rounded-full border border-white bg-white"
+                >
+                  <img
+                    src="src/assets/icons/frame.png"
+                    alt="Save listing"
+                    class="h-[18px] w-[18px] md:h-[20px] md:w-[20px] lg:h-[20px] lg:w-[20px] xl:h-[18px] xl:w-[18px]"
+                  />
+                </span>
+              </div>
+              <div>
+                <h3
+                  class="ml-[20px] text-[14px] font-medium leading-[100%] tracking-[0%] text-black md:text-[16px] lg:text-[18px] xl:text-[14px]"
+                >
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <p
+                  class="ml-[20px] mt-[10px] text-[12px] font-normal leading-[100%] tracking-[0%] text-black opacity-50 md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                >
+                  Kajiado, Namanga
+                </p>
+                <p
+                  class="listing-card-price mb-[16px] mr-[20px] mt-[24px] text-right text-[24px] font-medium leading-[100%] tracking-[0%] text-[#29B24E] md:text-[28px] lg:text-[32px] xl:text-[24px]"
+                >
+                  1450$<span
+                    class="text-[12px] font-normal text-black md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                    >/ Month</span
+                  >
+                </p>
+                <div
+                  class="mb-[24px] h-px w-[335px] rounded-[2px] bg-[#CFEAD6] md:w-[420px] lg:w-[520px] xl:w-[335px]"
+                ></div>
+                <div
+                  class="mx-[20px] flex items-center justify-between text-[12px] font-normal leading-[100%] tracking-[0%] text-black md:text-[13px] lg:text-[14px] xl:text-[12px]"
+                >
+                  <span>5 Bedroom</span><span>3 bathroom</span
+                  ><span>450 Sq.m.</span>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        class="mx-auto mb-[156px] h-[326px] w-full max-w-[375px] rounded-[24px] bg-[#29B24E] md:mb-[160px] md:h-[342px] md:max-w-[420px] lg:mb-[166px] lg:h-[356px] lg:max-w-[520px] xl:mb-[172px] xl:h-[368px] xl:max-w-[620px] 2xl:mb-[0px] 2xl:mt-[120px] 2xl:h-[179px] 2xl:max-w-[1920px]"
+      >
+        <div
+          class="flex justify-between px-[20px] pt-[40px] md:px-[24px] md:pt-[44px] lg:px-[28px] lg:pt-[48px] xl:px-[32px] xl:pt-[52px] 2xl:mx-auto 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px] 2xl:px-0 2xl:pt-[40px]"
+        >
+          <div
+            class="flex flex-col gap-[22px] md:gap-[24px] lg:gap-[26px] xl:gap-[28px] 2xl:flex-row 2xl:gap-[48px]"
+          >
+            <a
+              href="index.html"
+              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px]"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px]"
+            >
+              Discover
+            </a>
+            <a
+              href="#"
+              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px]"
+            >
+              Contact us
+            </a>
+            <a
+              href="#"
+              class="text-[16px] font-medium leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px]"
+            >
+              Sign in
+            </a>
+          </div>
+          <div class="hidden 2xl:block">
+            <p
+              class="text-[14px] font-medium leading-[100%] tracking-[0%] text-[#FFFFFF]"
+            >
+              Support@Roberts.com
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-end gap-[22px] text-right md:gap-[24px] lg:gap-[26px] xl:gap-[28px] 2xl:flex-row 2xl:gap-[48px]"
+          >
+            <a
+              href="#"
+              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px] 2xl:font-medium"
+            >
+              Facebook
+            </a>
+            <a
+              href="#"
+              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px] 2xl:font-medium"
+            >
+              Instagram
+            </a>
+            <a
+              href="#"
+              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px] 2xl:font-medium"
+            >
+              Youtube
+            </a>
+            <a
+              href="#"
+              class="text-[16px] font-normal leading-[100%] tracking-[0%] text-white md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[14px] 2xl:font-medium"
+            >
+              Twitter
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="mx-auto mb-[40px] mt-[40px] h-px w-[335px] rounded-[40px] bg-[#D0D0D0] md:mb-[44px] md:mt-[44px] md:w-[372px] lg:mb-[48px] lg:mt-[48px] lg:w-[464px] xl:w-[556px] 2xl:mb-[32px] 2xl:mt-[32px] 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px]"
+        ></div>
+
+        <div>
+          <p
+            class="text-center text-[14px] font-normal leading-[100%] tracking-[0%] text-white md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[14px] 2xl:font-medium"
+          >
+            &copy; 2022 Robert.co.ke Gibraltar
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <nav
+      class="fixed inset-x-0 bottom-0 z-10 mx-auto h-[72px] w-full max-w-[375px] rounded-tl-[24px] rounded-tr-[24px] bg-white md:h-[76px] md:max-w-[420px] lg:h-[82px] lg:max-w-[520px] xl:h-[88px] xl:max-w-[620px] 2xl:hidden"
+      aria-label="Mobile navigation"
+    >
+      <div
+        class="flex h-full items-end justify-between px-[13px] md:px-[18px] lg:px-[26px] xl:px-[34px]"
+      >
+        <a
+          href="./index.html"
+          class="flex w-[50px] flex-col items-center text-[11px] font-medium leading-[100%] tracking-[0%] text-black opacity-90 md:w-[56px] md:text-[12px] lg:w-[62px] lg:text-[13px] xl:w-[68px] xl:text-[14px]"
+        >
+          <img
+            src="src/assets/icons/home.png"
+            alt="Home icon"
+            class="mb-[4px] mt-[12px] h-[24px] w-[24px] md:mt-[13px] md:h-[26px] md:w-[26px] lg:mt-[14px] lg:h-[28px] lg:w-[28px] xl:h-[30px] xl:w-[30px]"
+          />
+          <span class="mb-[15px] md:mb-[16px] lg:mb-[17px] xl:mb-[18px]"
+            >Home</span
+          >
+        </a>
+        <a
+          href="#"
+          class="flex w-[50px] flex-col items-center text-[11px] font-medium leading-[100%] tracking-[0%] text-black opacity-90 md:w-[56px] md:text-[12px] lg:w-[62px] lg:text-[13px] xl:w-[68px] xl:text-[14px]"
+        >
+          <img
+            src="src/assets/icons/discover.png"
+            alt="Discover icon"
+            class="mb-[4px] mt-[12px] h-[24px] w-[24px] md:mt-[13px] md:h-[26px] md:w-[26px] lg:mt-[14px] lg:h-[28px] lg:w-[28px] xl:h-[30px] xl:w-[30px]"
+          />
+          <span class="mb-[15px] md:mb-[16px] lg:mb-[17px] xl:mb-[18px]"
+            >Discover</span
+          >
+        </a>
+        <a
+          href="#"
+          class="flex w-[56px] flex-col items-center text-[11px] font-medium leading-[100%] tracking-[0%] text-black opacity-90 md:w-[62px] md:text-[12px] lg:w-[68px] lg:text-[13px] xl:w-[74px] xl:text-[14px]"
+        >
+          <span
+            class="mb-[5px] flex h-[56px] w-[56px] -translate-y-[6px] items-center justify-center rounded-[12px] bg-[#29B24E] md:h-[60px] md:w-[60px] md:rounded-[13px] md:-translate-y-[7px] lg:h-[64px] lg:w-[64px] lg:rounded-[14px] lg:-translate-y-[8px] xl:h-[68px] xl:w-[68px] xl:rounded-[15px] xl:-translate-y-[9px]"
+          >
+            <img
+              src="src/assets/icons/frame-mob.png"
+              alt="Sell icon"
+              class="h-[32px] w-[32px] md:h-[34px] md:w-[34px] lg:h-[36px] lg:w-[36px] xl:h-[38px] xl:w-[38px]"
+            />
+          </span>
+          <span class="mb-[6px] md:mb-[7px] lg:mb-[8px] xl:mb-[9px]">Sell</span>
+        </a>
+        <a
+          href="#"
+          class="flex w-[50px] flex-col items-center text-[11px] font-medium leading-[100%] tracking-[0%] text-black opacity-90 md:w-[56px] md:text-[12px] lg:w-[62px] lg:text-[13px] xl:w-[68px] xl:text-[14px]"
+        >
+          <img
+            src="src/assets/icons/message.png"
+            alt="Message icon"
+            class="mb-[4px] mt-[12px] h-[24px] w-[24px] md:mt-[13px] md:h-[26px] md:w-[26px] lg:mt-[14px] lg:h-[28px] lg:w-[28px] xl:h-[30px] xl:w-[30px]"
+          />
+          <span class="mb-[15px] md:mb-[16px] lg:mb-[17px] xl:mb-[18px]"
+            >Message</span
+          >
+        </a>
+        <a
+          href="#"
+          class="flex w-[50px] flex-col items-center text-[11px] font-medium leading-[100%] tracking-[0%] text-black opacity-90 md:w-[56px] md:text-[12px] lg:w-[62px] lg:text-[13px] xl:w-[68px] xl:text-[14px]"
+        >
+          <img
+            src="src/assets/icons/profile.png"
+            alt="Profile icon"
+            class="mb-[4px] mt-[12px] h-[24px] w-[24px] md:mt-[13px] md:h-[26px] md:w-[26px] lg:mt-[14px] lg:h-[28px] lg:w-[28px] xl:h-[30px] xl:w-[30px]"
+          />
+          <span class="mb-[15px] md:mb-[16px] lg:mb-[17px] xl:mb-[18px]"
+            >Profile</span
+          >
+        </a>
+      </div>
+    </nav>
+  </body>
 </html>
