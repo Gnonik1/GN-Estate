@@ -24,7 +24,7 @@
     />
     <meta
       property="og:image"
-      content="https://github.com/Gnonik1/GN-Estate/blob/main/src/assets/images/main-photo.jpg?raw=true"
+      content="https://github.com/Gnonik1/GN-Estate/blob/main/src/assets/images/house3.jpg?raw=true"
     />
     <meta
       name="google-site-verification"
@@ -70,31 +70,32 @@
     </header>
 
     <main>
+      <!-- Home and Description -->
       <section
-        class="pt-[20px] md:px-[32px] md:pt-[32px] lg:px-[48px] lg:pt-[40px] xl:px-[56px] xl:pt-[48px] 2xl:mx-auto 2xl:flex 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px] 2xl:items-start 2xl:gap-[40px] 2xl:px-0 2xl:pt-0"
+        class="pt-[20px] md:px-[32px] md:pt-[32px] lg:px-[48px] lg:pt-[40px] xl:px-[56px] xl:pt-[48px] 2xl:mx-auto 2xl:grid 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px] 2xl:grid-cols-[minmax(0,810fr)_minmax(0,786fr)] 2xl:items-start 2xl:gap-[44px] 2xl:px-0 2xl:pt-0"
       >
         <img
           src="src/assets/images/house3.jpg"
           alt="Modern apartment exterior"
-          class="mx-auto mb-[42px] h-[316px] w-full max-w-[335px] rounded-[12px] object-cover md:mb-[48px] md:h-[396px] md:max-w-[420px] lg:mb-[56px] lg:h-[492px] lg:max-w-[520px] xl:mb-[64px] xl:h-[586px] xl:max-w-[620px] 2xl:hidden"
+          class="mx-auto mb-[42px] h-[316px] w-full max-w-[335px] rounded-[12px] object-cover md:mb-[48px] md:h-[396px] md:max-w-[420px] lg:mb-[56px] lg:h-[492px] lg:max-w-[520px] xl:mb-[64px] xl:h-[586px] xl:max-w-[620px] 2xl:mx-0 2xl:mb-0 2xl:h-[732px] 2xl:w-full 2xl:max-w-none"
         />
 
         <article
-          class="w-full rounded-[24px] bg-[#F8F8F8] pb-[45px] 2xl:mt-0 2xl:min-h-[732px] 2xl:flex-1 2xl:rounded-[20px] 2xl:border-[2px] 2xl:border-[#009EFF] 2xl:px-[40px] 2xl:pb-[28px] 2xl:pt-[32px]"
+          class="w-full rounded-[24px] bg-[#F8F8F8] pb-[45px] 2xl:relative 2xl:mt-0 2xl:flex 2xl:h-[732px] 2xl:min-w-0 2xl:flex-col 2xl:rounded-[20px] 2xl:px-[40px] 2xl:pb-[28px] 2xl:pt-[32px] 2xl:shadow-[0_4px_18px_rgba(0,0,0,0.04)]"
         >
-          <div class="flex flex-nowrap items-start">
+          <div class="flex flex-nowrap items-start 2xl:relative">
             <span
               class="ml-[20px] mr-[24px] mt-[10px] flex h-[28px] w-[76px] shrink-0 items-center justify-center rounded-[15px] bg-[#29B24E] text-[12px] font-medium leading-[100%] tracking-[0%] text-white 2xl:ml-0 2xl:mr-0 2xl:mt-0 2xl:h-[30px]"
               >VIP TOP+</span
             >
             <span
-              class="mr-[36px] mt-[18px] w-[107px] shrink-0 text-[12px] font-medium leading-[100%] tracking-[0%] text-black opacity-60 2xl:ml-auto 2xl:mr-[76px] 2xl:mt-[3px]"
+              class="mr-[36px] mt-[18px] w-[107px] shrink-0 text-[12px] font-medium leading-[100%] tracking-[0%] text-black opacity-60 2xl:absolute 2xl:left-1/2 2xl:top-[3px] 2xl:mr-0 2xl:mt-0 2xl:-translate-x-1/2"
               >Posted 1 hour ago</span
             >
             <img
               src="src/assets/icons/eye.png"
               alt=""
-              class="mr-[10px] mt-[16px] h-[16px] w-[16px] shrink-0 2xl:mt-0"
+              class="mr-[10px] mt-[16px] h-[16px] w-[16px] shrink-0 2xl:ml-auto 2xl:mt-0"
             />
             <span
               class="mr-[20px] mt-[18px] w-[53px] shrink-0 text-[12px] font-medium leading-[100%] tracking-[0%] text-black opacity-60 2xl:mr-0 2xl:mt-[3px]"
@@ -131,9 +132,11 @@
           </div>
 
           <div
-            class="mx-[20px] mb-[16px] mt-[20px] flex flex-col gap-[12px] text-[12px] font-normal leading-[100%] tracking-[0%] md:gap-[14px] lg:gap-[16px] xl:grid xl:grid-cols-2 xl:gap-x-[40px] xl:gap-y-[18px] 2xl:mx-0 2xl:grid-cols-3 2xl:gap-x-[56px] 2xl:gap-y-[22px] 2xl:py-[28px] 2xl:text-[12px]"
+            class="mx-[20px] mb-[16px] mt-[20px] flex flex-col gap-[12px] text-[12px] font-normal leading-[100%] tracking-[0%] md:gap-[14px] lg:gap-[16px] xl:grid xl:grid-cols-2 xl:gap-x-[40px] xl:gap-y-[18px] 2xl:mx-0 2xl:mt-[24px] 2xl:h-[208px] 2xl:content-start 2xl:grid-cols-3 2xl:gap-x-[56px] 2xl:gap-y-[22px] 2xl:pb-[24px] 2xl:pt-0 2xl:text-[12px]"
           >
-            <div class="flex justify-between gap-[20px] 2xl:block">
+            <div
+              class="flex justify-between gap-[20px] 2xl:col-start-1 2xl:row-start-1 2xl:block"
+            >
               <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
                 Property address
               </p>
@@ -143,7 +146,9 @@
                 mombasa rd
               </p>
             </div>
-            <div class="flex justify-between gap-[12px] 2xl:block">
+            <div
+              class="flex justify-between gap-[12px] 2xl:col-start-1 2xl:row-start-2 2xl:block"
+            >
               <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
                 Condition
               </p>
@@ -153,7 +158,9 @@
                 Fairly Used
               </p>
             </div>
-            <div class="flex justify-between gap-[12px] 2xl:block">
+            <div
+              class="flex justify-between gap-[12px] 2xl:col-start-1 2xl:row-start-3 2xl:block"
+            >
               <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
                 Condition
               </p>
@@ -163,18 +170,28 @@
                 Fairly Used
               </p>
             </div>
-            <div class="flex justify-between gap-[12px] 2xl:block">
+            <div
+              class="flex justify-between gap-[12px] 2xl:col-start-2 2xl:row-span-3 2xl:row-start-1 2xl:block"
+            >
               <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
                 Facilities
               </p>
               <p
-                class="max-w-[180px] text-right text-[14px] font-medium leading-[23px] text-black opacity-80 2xl:max-w-none 2xl:text-left 2xl:text-[12px] 2xl:leading-[150%] 2xl:opacity-100"
+                class="max-w-[180px] text-right text-[14px] font-medium leading-[23px] text-black opacity-80 2xl:w-[133px] 2xl:max-w-[133px] 2xl:text-left 2xl:text-[12px] 2xl:leading-[150%] 2xl:opacity-100"
               >
-                24-hour Electricity, Dining Area, En Suite, Hot Water, Kitchen
-                Cabinets, Kitchen Shelf, Microwave, Refrigerator
+                <span class="2xl:block">24-hour Electricity,</span>
+                <span class="2xl:block">Dining Area,</span>
+                <span class="2xl:block">En Suite,</span>
+                <span class="2xl:block">Hot Water,</span>
+                <span class="2xl:block">Kitchen Cabinets,</span>
+                <span class="2xl:block">Kitchen Shelf,</span>
+                <span class="2xl:block">Microwave,</span>
+                <span class="2xl:block">Refrigerator</span>
               </p>
             </div>
-            <div class="flex justify-between gap-[12px] 2xl:block">
+            <div
+              class="flex justify-between gap-[12px] 2xl:col-start-3 2xl:row-start-1 2xl:block"
+            >
               <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
                 Estate name
               </p>
@@ -184,7 +201,9 @@
                 Next Gen
               </p>
             </div>
-            <div class="flex justify-between gap-[12px] 2xl:block">
+            <div
+              class="flex justify-between gap-[12px] 2xl:col-start-3 2xl:row-start-2 2xl:block"
+            >
               <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
                 Furnishing
               </p>
@@ -194,7 +213,9 @@
                 Semi-Furnished
               </p>
             </div>
-            <div class="flex justify-between gap-[12px] 2xl:block">
+            <div
+              class="flex justify-between gap-[12px] 2xl:col-start-3 2xl:row-start-3 2xl:block"
+            >
               <p class="text-black opacity-60 2xl:mb-[6px] 2xl:opacity-40">
                 Property size
               </p>
@@ -207,10 +228,10 @@
           </div>
 
           <div
-            class="border-t border-[#ECECEC] pt-[16px] 2xl:flex 2xl:items-center 2xl:justify-between 2xl:pt-[28px]"
+            class="border-t border-[#ECECEC] pt-[16px] 2xl:mt-auto 2xl:flex 2xl:items-center 2xl:justify-end 2xl:pt-[28px]"
           >
             <p
-              class="mb-[40px] ml-[51px] text-[22px] font-semibold leading-[100%] tracking-[0%] text-[#29B24E] 2xl:mb-0 2xl:ml-0 2xl:text-[36px]"
+              class="mb-[40px] ml-[51px] text-[22px] font-semibold leading-[100%] tracking-[0%] text-[#29B24E] 2xl:absolute 2xl:bottom-[24px] 2xl:left-[94px] 2xl:mb-0 2xl:ml-0 2xl:text-[36px]"
             >
               1450$<span
                 class="text-[10px] font-normal text-black 2xl:text-[14px]"
@@ -236,7 +257,7 @@
           </div>
         </article>
       </section>
-
+      <!-- Cards -->
       <section
         class="mx-auto mt-[40px] max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:max-w-[1045px] 2xl:mt-[80px] 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px]"
       >
@@ -253,7 +274,7 @@
             class="mb-[74px] w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:mb-[74px] xl:w-[335px] xl:max-w-[335px] 2xl:mb-0 2xl:max-w-none"
           >
             <article
-              class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
+              class="listing-card h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
             >
               <div class="relative mb-[28px] ml-[16px] mr-[16px] pt-[16px]">
                 <img
@@ -316,7 +337,7 @@
             class="hidden w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:block xl:w-[335px] xl:max-w-[335px] 2xl:max-w-none"
           >
             <article
-              class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
+              class="listing-card h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
             >
               <div class="relative mb-[28px] ml-[16px] mr-[16px] pt-[16px]">
                 <img
@@ -374,7 +395,7 @@
             class="hidden w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:hidden xl:w-[335px] xl:max-w-[335px] 2xl:block 2xl:max-w-none"
           >
             <article
-              class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
+              class="listing-card h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
             >
               <div class="relative mb-[28px] ml-[16px] mr-[16px] pt-[16px]">
                 <img
@@ -432,7 +453,7 @@
             class="hidden w-full max-w-[335px] md:max-w-[420px] lg:max-w-[520px] xl:block xl:w-[335px] xl:max-w-[335px] 2xl:max-w-none"
           >
             <article
-              class="h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
+              class="listing-card h-[424px] w-[335px] rounded-[24px] bg-[#F8F8F8] md:h-[492px] md:w-[420px] lg:h-[576px] lg:w-[520px] xl:h-[424px] xl:w-[335px]"
             >
               <div class="relative mb-[28px] ml-[16px] mr-[16px] pt-[16px]">
                 <img
@@ -491,7 +512,7 @@
 
     <footer>
       <div
-        class="mx-auto mb-[156px] h-[326px] w-full max-w-[375px] rounded-[24px] bg-[#29B24E] md:mb-[160px] md:h-[342px] md:max-w-[420px] lg:mb-[166px] lg:h-[356px] lg:max-w-[520px] xl:mb-[172px] xl:h-[368px] xl:max-w-[620px] 2xl:mb-[0px] 2xl:mt-[120px] 2xl:h-[179px] 2xl:max-w-[1920px]"
+        class="mx-auto mb-[156px] h-[326px] w-full rounded-[24px] bg-[#29B24E] md:mb-[160px] md:h-[342px] md:w-[calc(100%_-_64px)] lg:mb-[166px] lg:h-[356px] lg:w-[calc(100%_-_96px)] xl:mb-[172px] xl:h-[368px] xl:w-[calc(100%_-_112px)] 2xl:mb-[0px] 2xl:mt-[120px] 2xl:h-[179px] 2xl:w-full 2xl:max-w-[1920px]"
       >
         <div
           class="flex justify-between px-[20px] pt-[40px] md:px-[24px] md:pt-[44px] lg:px-[28px] lg:pt-[48px] xl:px-[32px] xl:pt-[52px] 2xl:mx-auto 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px] 2xl:px-0 2xl:pt-[40px]"
@@ -563,7 +584,7 @@
         </div>
 
         <div
-          class="mx-auto mb-[40px] mt-[40px] h-px w-[335px] rounded-[40px] bg-[#D0D0D0] md:mb-[44px] md:mt-[44px] md:w-[372px] lg:mb-[48px] lg:mt-[48px] lg:w-[464px] xl:w-[556px] 2xl:mb-[32px] 2xl:mt-[32px] 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px]"
+          class="mx-auto mb-[40px] mt-[40px] h-px w-[calc(100%_-_40px)] rounded-[40px] bg-[#D0D0D0] md:mb-[44px] md:mt-[44px] md:w-[calc(100%_-_48px)] lg:mb-[48px] lg:mt-[48px] lg:w-[calc(100%_-_56px)] xl:w-[calc(100%_-_64px)] 2xl:mb-[32px] 2xl:mt-[32px] 2xl:w-[calc(100%_-_280px)] 2xl:max-w-[1640px]"
         ></div>
 
         <div>
