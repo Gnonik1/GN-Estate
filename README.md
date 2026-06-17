@@ -38,4 +38,3 @@ The project focuses on clear page structure, visual presentation, spacing, and a
 ## Project Status
 
 Completed as a frontend practice project.
-# GN-Estate
